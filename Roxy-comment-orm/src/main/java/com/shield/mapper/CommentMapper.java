@@ -1,7 +1,10 @@
 package com.shield.mapper;
 
 import com.shield.entity.CommentEntity;
+import com.shield.entity.CommentParam;
 import org.apache.ibatis.annotations.Mapper;
+
+import java.util.List;
 
 @Mapper
 public interface CommentMapper {
@@ -11,4 +14,19 @@ public interface CommentMapper {
      * @return
      */
     int addComment(CommentEntity entity);
+    /**
+     * 删除评论by id
+     * @return
+     */
+    int deleteCommentById(Long id);
+    /**
+     * 查询评论
+     * @return
+     */
+    List<CommentEntity> queryCommentByParam(CommentParam commentParam);
+     /**
+ * 查询评论总数
+ * @return
+ */
+    int countCommentByParam(CommentParam commentParam);
 }

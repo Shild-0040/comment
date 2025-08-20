@@ -9,6 +9,15 @@ import java.util.List;
  */
 @Data
 public class DelCommentRequestParam {
+
+    /**
+     * 用户id
+     */
+    private String userId;
+    /**
+     * 评论id
+     */
+    private String commentId;
     /**
      * 模块
      */
@@ -17,18 +26,5 @@ public class DelCommentRequestParam {
      * 资源ID
      */
     private Long resourceId;
-    /**
-     * 用户id
-     */
-    private String userId;
-    /**
-     * 评论id
-     */
-    private String id;
-
-    /**
-     * 评论id
-     */
-    private List<String> ids;
 
 }

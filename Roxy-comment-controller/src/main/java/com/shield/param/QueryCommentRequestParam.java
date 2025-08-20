@@ -22,23 +22,27 @@ public class QueryCommentRequestParam {
      * 资源id
      */
     private String resourceId;
-
     /**
-     * 评论ID
+     * 评分
      */
-    private String commentId;
-
+    private Integer Score;
     /**
-     * 回复ID
+     * 排序方式
+     * 1：最新
+     * 2：最热
+     * 3：最早
      */
-    private String replyId;
-
+private Integer order;
     /**
      * 回复数量
      */
     private Integer replyNum;
     /**
-     * 热度分数
+     * 页码
      */
-    private Integer hotScore;
+    private Integer pageNum;
+    /**
+     * 页大小
+     */
+    private Integer pageSize;
 }

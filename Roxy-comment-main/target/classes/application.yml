@@ -12,7 +12,9 @@ spring:
 # mybatis信息配置
 mybatis:
   mapper-locations: classpath:mapper/*.xml
-
+#  configuration:
+#    map-underscore-to-camel-case: true
+#日志信息
 logging:
   level:
     root: info
